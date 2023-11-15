@@ -134,7 +134,7 @@
             ]
           },
           "dependencies": {
-            "@airgap/beacon-sdk": "4.0.12",
+            "@sparkdreamnft/beacon-sdk": "4.0.13",
             "@taquito/taquito": "^8.0.4-beta.0",
             "@taquito/utils": "^8.0.4-beta.0"
           },

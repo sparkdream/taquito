@@ -29,7 +29,7 @@
     "@mdx-js/react": "^1.6.22",
     "@svgr/webpack": "^8.1.0",
     "@taquito/core": "file:../packages/taquito-core",
-    "@taquito/beacon-wallet": "file:../packages/taquito-beacon-wallet",
+    "@sparkdreamnft/beacon-wallet": "file:../packages/taquito-beacon-wallet",
     "@taquito/http-utils": "file:../packages/taquito-http-utils",
     "@taquito/ledger-signer": "file:../packages/taquito-ledger-signer",
     "@taquito/michel-codec": "file:../packages/taquito-michel-codec",
