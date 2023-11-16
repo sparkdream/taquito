@@ -1,6 +1,6 @@
 {
   "name": "@sparkdreamnft/taquito-rpc",
-  "version": "17.4.2-beta-RC.0",
+  "version": "17.4.3-beta-RC.0",
   "description": "Provides low level methods, and types to invoke RPC calls from a Nomadic Tezos RPC node",
   "keywords": [
     "tezos",
@@ -71,9 +71,9 @@
     ]
   },
   "dependencies": {
-    "@sparkdreamnft/taquito-core": "^17.4.2-beta-RC.0",
-    "@sparkdreamnft/taquito-http-utils": "^17.4.2-beta-RC.0",
-    "@sparkdreamnft/taquito-utils": "^17.4.2-beta-RC.0",
+    "@sparkdreamnft/taquito-core": "^17.4.3-beta-RC.0",
+    "@sparkdreamnft/taquito-http-utils": "^17.4.3-beta-RC.0",
+    "@sparkdreamnft/taquito-utils": "^17.4.3-beta-RC.0",
     "bignumber.js": "^9.1.2"
   },
   "devDependencies": {
