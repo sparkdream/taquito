@@ -1,5 +1,5 @@
 {
-  "name": "@sparkdreamnft/beacon-wallet",
+  "name": "@sparkdreamnft/taquito-beacon-wallet",
   "version": "17.4.1-beta-RC.0",
   "description": "Beacon wallet provider",
   "keywords": [
@@ -71,8 +71,8 @@
     ]
   },
   "dependencies": {
-    "@airgap/beacon-dapp": "4.0.12",
-    "@sparkdreamnft/core": "^17.4.0-beta-RC.0",
+    "@sparkdreamnft/beacon-dapp": "^4.0.14",
+    "@sparkdreamnft/core": "^17.4.1-beta-RC.0",
     "@sparkdreamnft/taquito": "^17.4.1-beta-RC.0"
   },
   "devDependencies": {
