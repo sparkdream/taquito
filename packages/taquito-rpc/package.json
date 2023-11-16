@@ -1,5 +1,5 @@
 {
-  "name": "@taquito/rpc",
+  "name": "@sparkdreamnft/taquito-rpc",
   "version": "17.4.0-beta-RC.0",
   "description": "Provides low level methods, and types to invoke RPC calls from a Nomadic Tezos RPC node",
   "keywords": [
@@ -45,7 +45,8 @@
   },
   "jest": {
     "transform": {
-      ".(ts|tsx)": "ts-jest"
+      "^.+\\.(ts|tsx)$": "ts-jest",
+      "^.+\\.(js|jsx)$": "babel-jest"
     },
     "testEnvironment": "node",
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
@@ -55,8 +56,12 @@
       "js"
     ],
     "moduleNameMapper": {
-      "^@taquito/http-utils$": "<rootDir>/../taquito-http-utils/src/taquito-http-utils.ts"
+      "^@taquito/http-utils$": "<rootDir>/../taquito-http-utils/src/taquito-http-utils.ts",
+      "^axios/lib/(.*)$": "<rootDir>/../../node_modules/axios/lib/$1"
     },
+    "transformIgnorePatterns": [
+      "node_modules/(?!axios/lib)"
+    ],
     "coveragePathIgnorePatterns": [
       "/node_modules/",
       "/test/"
@@ -66,17 +71,20 @@
     ]
   },
   "dependencies": {
-    "@taquito/core": "^17.4.0-beta-RC.0",
-    "@taquito/http-utils": "^17.4.0-beta-RC.0",
-    "@taquito/utils": "^17.4.0-beta-RC.0",
+    "@sparkdreamnft/taquito-core": "^17.4.0-beta-RC.0",
+    "@sparkdreamnft/taquito-http-utils": "^17.4.0-beta-RC.0",
+    "@sparkdreamnft/taquito-utils": "^17.4.0-beta-RC.0",
     "bignumber.js": "^9.1.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
     "@types/bluebird": "^3.5.40",
     "@types/jest": "^29.5.5",
     "@types/node": "^20",
     "@typescript-eslint/eslint-plugin": "^6.8.0",
     "@typescript-eslint/parser": "^6.8.0",
+    "babel-jest": "^29.7.0",
     "colors": "^1.4.0",
     "coveralls": "^3.1.1",
     "cross-env": "^7.0.3",

@@ -1,5 +1,5 @@
 {
-  "name": "@taquito/michel-codec",
+  "name": "@sparkdreamnft/taquito-michel-codec",
   "version": "17.4.0-beta-RC.0",
   "description": "Michelson parser/validator/formatter",
   "keywords": [
@@ -45,7 +45,8 @@
   },
   "jest": {
     "transform": {
-      ".(ts|tsx)": "ts-jest"
+      "^.+\\.(ts|tsx)$": "ts-jest",
+      "^.+\\.(js|jsx)$": "babel-jest"
     },
     "testEnvironment": "node",
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
@@ -55,8 +56,12 @@
       "js"
     ],
     "moduleNameMapper": {
-      "^@taquito/utils$": "<rootDir>/../taquito-utils/src/taquito-utils.ts"
+      "^@taquito/utils$": "<rootDir>/../taquito-utils/src/taquito-utils.ts",
+      "^axios/lib/(.*)$": "<rootDir>/../../node_modules/axios/lib/$1"
     },
+    "transformIgnorePatterns": [
+      "node_modules/(?!axios/lib)"
+    ],
     "coveragePathIgnorePatterns": [
       "/node_modules/",
       "/test/"
@@ -66,14 +71,17 @@
     ]
   },
   "dependencies": {
-    "@taquito/core": "^17.4.0-beta-RC.0"
+    "@sparkdreamnft/taquito-core": "^17.4.0-beta-RC.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
     "@types/bluebird": "^3.5.40",
     "@types/jest": "^29.5.5",
     "@types/node": "^20",
     "@typescript-eslint/eslint-plugin": "^6.8.0",
     "@typescript-eslint/parser": "^6.8.0",
+    "babel-jest": "^29.7.0",
     "eslint": "^8.51.0",
     "jest": "^29.7.0",
     "jest-config": "^29.7.0",

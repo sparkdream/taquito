@@ -1,5 +1,5 @@
 {
-  "name": "@taquito/tzip16",
+  "name": "@sparkdreamnft/taquito-tzip16",
   "version": "17.4.0-beta-RC.0",
   "description": "Tzip16",
   "keywords": [
@@ -43,7 +43,8 @@
   },
   "jest": {
     "transform": {
-      ".(ts|tsx)": "ts-jest"
+      "^.+\\.(ts|tsx)$": "ts-jest",
+      "^.+\\.(js|jsx)$": "babel-jest"
     },
     "testEnvironment": "node",
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
@@ -51,6 +52,12 @@
       "ts",
       "tsx",
       "js"
+    ],
+    "moduleNameMapper": {
+      "^axios/lib/(.*)$": "<rootDir>/../../node_modules/axios/lib/$1"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!axios/lib)"
     ],
     "coveragePathIgnorePatterns": [
       "/node_modules/",
@@ -61,16 +68,18 @@
     ]
   },
   "dependencies": {
-    "@taquito/core": "^17.4.0-beta-RC.0",
-    "@taquito/http-utils": "^17.4.0-beta-RC.0",
-    "@taquito/michelson-encoder": "^17.4.0-beta-RC.0",
-    "@taquito/rpc": "^17.4.0-beta-RC.0",
-    "@taquito/taquito": "^17.4.0-beta-RC.0",
-    "@taquito/utils": "^17.4.0-beta-RC.0",
+    "@sparkdreamnft/taquito": "^17.4.0-beta-RC.0",
+    "@sparkdreamnft/taquito-core": "^17.4.0-beta-RC.0",
+    "@sparkdreamnft/taquito-http-utils": "^17.4.0-beta-RC.0",
+    "@sparkdreamnft/taquito-michelson-encoder": "^17.4.0-beta-RC.0",
+    "@sparkdreamnft/taquito-rpc": "^17.4.0-beta-RC.0",
+    "@sparkdreamnft/taquito-utils": "^17.4.0-beta-RC.0",
     "bignumber.js": "^9.1.2",
     "crypto-js": "^4.2.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
     "@types/bluebird": "^3.5.40",
     "@types/crypto-js": "^4.2.0",
     "@types/jest": "^29.5.5",
@@ -78,6 +87,7 @@
     "@types/ws": "^8.5.7",
     "@typescript-eslint/eslint-plugin": "^6.8.0",
     "@typescript-eslint/parser": "^6.8.0",
+    "babel-jest": "^29.7.0",
     "colors": "^1.4.0",
     "coveralls": "^3.1.1",
     "cross-env": "^7.0.3",

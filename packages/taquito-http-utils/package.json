@@ -1,5 +1,5 @@
 {
-  "name": "@taquito/http-utils",
+  "name": "@sparkdreamnft/taquito-http-utils",
   "version": "17.4.0-beta-RC.0",
   "description": "",
   "keywords": [
@@ -25,6 +25,9 @@
     "node": ">=18"
   },
   "scripts": {
+    "test": "jest --coverage",
+    "test:watch": "jest --coverage --watch",
+    "test:prod": "npm run lint && npm run test -- --no-cache",
     "lint": "eslint --ext .js,.ts .",
     "precommit": "lint-staged",
     "prebuild": "rimraf dist",
@@ -40,7 +43,8 @@
   },
   "jest": {
     "transform": {
-      ".(ts|tsx)": "ts-jest"
+      "^.+\\.(ts|tsx)$": "ts-jest",
+      "^.+\\.(js|jsx)$": "babel-jest"
     },
     "testEnvironment": "node",
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
@@ -48,6 +52,12 @@
       "ts",
       "tsx",
       "js"
+    ],
+    "moduleNameMapper": {
+      "^axios/lib/(.*)$": "<rootDir>/../../node_modules/axios/lib/$1"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!axios/lib)"
     ],
     "coveragePathIgnorePatterns": [
       "/node_modules/",
@@ -58,16 +68,19 @@
     ]
   },
   "dependencies": {
-    "@taquito/core": "^17.4.0-beta-RC.0",
+    "@sparkdreamnft/taquito-core": "^17.4.0-beta-RC.0",
     "axios": "^1.6.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
     "@types/bluebird": "^3.5.40",
     "@types/jest": "^29.5.5",
     "@types/node": "^20",
     "@types/superagent": "^4.1.19",
     "@typescript-eslint/eslint-plugin": "^6.8.0",
     "@typescript-eslint/parser": "^6.8.0",
+    "babel-jest": "^29.7.0",
     "colors": "^1.4.0",
     "coveralls": "^3.1.1",
     "cross-env": "^7.0.3",

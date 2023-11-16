@@ -8,20 +8,20 @@
     "integration-tests"
   ],
   "scripts": {
-    "build": "nx run-many --target=build --exclude=@taquito/website,taquito-test-dapp-vite",
-    "build-all": "nx run-many --target=build --exclude=@taquito/website",
-    "build-test-dapp": "lerna run build --scope=taquito-test-dapp-vite",
+    "build": "npx nx run-many --target=build --exclude=@taquito/website,taquito-test-dapp-vite",
+    "build-all": "npx nx run-many --target=build --exclude=@taquito/website",
+    "build-test-dapp": "npx lerna run build --scope=taquito-test-dapp-vite",
     "rebuild": "npm run clean && npm clean-install && npm run build",
-    "test": "nx run-many --target=test --exclude=integration-tests,@taquito/website,taquito-test-dapp-vite --collectCoverage",
-    "lint": "lerna run lint",
-    "clean": "rm -rf ./node_modules/* && lerna clean --yes",
+    "test": "npx nx run-many --target=test --exclude=integration-tests,@taquito/website,taquito-test-dapp-vite --collectCoverage",
+    "lint": "npx lerna run lint",
+    "clean": "rm -rf ./node_modules/* && npm i && npx lerna clean --yes",
     "commit": "git-cz",
-    "precommit": "lerna run --concurrency 1 --stream precommit",
+    "precommit": "npx lerna run --concurrency 1 --stream precommit",
     "example": "cd example && npm run example",
     "build-docs": "typedoc --tsconfig ./tsconfig.typedoc.json",
     "gh-pages": "gh-pages",
     "integration-tests": "npm -w integration-tests run test:originate-known-contracts && npm -w integration-tests run test:nairobinet-secret-key -- --testPathIgnorePatterns ledger-signer-failing-tests.spec.ts ledger-signer.spec.ts contract-estimation-tests.spec.ts rpc-get-protocol-constants.spec.ts",
-    "version-stamp": "lerna run version-stamp"
+    "version-stamp": "npx lerna run version-stamp"
   },
   "jest": {
     "transform": {

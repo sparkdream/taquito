@@ -1,5 +1,5 @@
 {
-  "name": "@taquito/local-forging",
+  "name": "@sparkdreamnft/taquito-local-forging",
   "version": "17.4.0-beta-RC.0",
   "description": "Provide local forging functionality to be with taquito",
   "keywords": [
@@ -46,7 +46,8 @@
   },
   "jest": {
     "transform": {
-      ".(ts|tsx)": "ts-jest"
+      "^.+\\.(ts|tsx)$": "ts-jest",
+      "^.+\\.(js|jsx)$": "babel-jest"
     },
     "testEnvironment": "node",
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
@@ -56,8 +57,12 @@
       "js"
     ],
     "moduleNameMapper": {
-      "^@taquito/utils$": "<rootDir>/../taquito-utils/src/taquito-utils.ts"
+      "^@taquito/utils$": "<rootDir>/../taquito-utils/src/taquito-utils.ts",
+      "^axios/lib/(.*)$": "<rootDir>/../../node_modules/axios/lib/$1"
     },
+    "transformIgnorePatterns": [
+      "node_modules/(?!axios/lib)"
+    ],
     "coveragePathIgnorePatterns": [
       "/node_modules/",
       "/test/"
@@ -67,18 +72,21 @@
     ]
   },
   "dependencies": {
-    "@taquito/core": "^17.4.0-beta-RC.0",
-    "@taquito/utils": "^17.4.0-beta-RC.0",
+    "@sparkdreamnft/taquito-core": "^17.4.0-beta-RC.0",
+    "@sparkdreamnft/taquito-utils": "^17.4.0-beta-RC.0",
     "bignumber.js": "^9.1.2"
   },
   "devDependencies": {
-    "@taquito/rpc": "^17.4.0-beta-RC.0",
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "@sparkdreamnft/taquito-rpc": "^17.4.0-beta-RC.0",
     "@types/bluebird": "^3.5.40",
     "@types/estree": "^1.0.2",
     "@types/jest": "^29.5.5",
     "@types/node": "^20",
     "@typescript-eslint/eslint-plugin": "^6.8.0",
     "@typescript-eslint/parser": "^6.8.0",
+    "babel-jest": "^29.7.0",
     "colors": "^1.4.0",
     "coveralls": "^3.1.1",
     "cross-env": "^7.0.3",

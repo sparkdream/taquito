@@ -8,7 +8,7 @@
   "author": "Eugene Zagidullin <eugene@ecadlabs.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "@taquito/rpc": "^17.4.0-beta-RC.0",
+    "@sparkdreamnft/taquito-rpc": "^17.4.0-beta-RC.0",
     "yargs": "^17.7.2"
   }
 }

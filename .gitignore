@@ -9,6 +9,7 @@ dist
 compiled
 .awcache
 .env
+.nx
 .rpt2_cache
 website/build/
 website/yarn.lock
