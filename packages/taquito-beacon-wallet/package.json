@@ -1,6 +1,6 @@
 {
   "name": "@sparkdreamnft/taquito-beacon-wallet",
-  "version": "17.4.1-beta-RC.0",
+  "version": "17.4.2-beta-RC.0",
   "description": "Beacon wallet provider",
   "keywords": [
     "tezos",
@@ -72,8 +72,8 @@
   },
   "dependencies": {
     "@sparkdreamnft/beacon-dapp": "^4.0.14",
-    "@sparkdreamnft/core": "^17.4.1-beta-RC.0",
-    "@sparkdreamnft/taquito": "^17.4.1-beta-RC.0"
+    "@sparkdreamnft/core": "^17.4.2-beta-RC.0",
+    "@sparkdreamnft/taquito": "^17.4.2-beta-RC.0"
   },
   "devDependencies": {
     "@babel/core": "^7.23.3",

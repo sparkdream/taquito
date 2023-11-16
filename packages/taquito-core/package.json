@@ -1,6 +1,6 @@
 {
   "name": "@sparkdreamnft/taquito-core",
-  "version": "17.4.1-beta-RC.0",
+  "version": "17.4.2-beta-RC.0",
   "description": "Classes, interfaces, and types shared across Taquito packages",
   "keywords": [
     "tezos",
