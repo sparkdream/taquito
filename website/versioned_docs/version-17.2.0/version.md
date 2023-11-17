@@ -617,7 +617,7 @@ const signer = InMemorySigner.fromMnemonic({ mnemonic, password, derivationPath:
 - Fixed broken link in the Wallet doc #1865
 
 ### Others
-- `@taquito-beacon-wallet` - Updated `@airgap/beacon-dapp` to version 3.3.0: https://github.com/airgap-it/beacon-sdk/releases/tag/v3.3.0
+- `@taquito-beacon-wallet` - Updated `@sparkdreamnft/beacon-dapp` to version 3.3.0: https://github.com/airgap-it/beacon-sdk/releases/tag/v3.3.0
 
 ### Internals
 - Speed up build with nx #2013
@@ -768,7 +768,7 @@ Note for the users of the lower level APIs: injecting more than one manager oper
 - Added more Manager_lambda scenarios to contract multisig integration tests #1724
 
 ### Others
-- `@taquito-beacon-wallet` - Updated `@airgap/beacon-dapp` to version 3.1.4
+- `@taquito-beacon-wallet` - Updated `@sparkdreamnft/beacon-dapp` to version 3.1.4
 - `@taquito/local-forging` - Pure JS implementation #441
 
 
@@ -897,7 +897,7 @@ The execution of the on-chain views previously relied on the `helpers/scripts/ru
 
 We added a feedback component at the bottom of each documentation page. We encourage you to provide feedback. It will help us evaluate which pages are the most helpful and which could benefit from improvement.
 
-## `@taquito-beacon-wallet` - Updated `@airgap/beacon-dapp` to version 3.1.4
+## `@taquito-beacon-wallet` - Updated `@sparkdreamnft/beacon-dapp` to version 3.1.4
 
 We are now using the beacon-dapp's `getDAppClientInstance` method instead of the `new DAppClient`. This new method ensures that only one instance is created. The same cached instance is returned if called multiple times.
 
@@ -2461,7 +2461,7 @@ If you are using a public testnet for your development or testing, please verify
 * Contract and Token Metadata features
 * Support for off-chain Michelson views
 * Michel-codec type checks all your Michelson
-* Ships with @airgap/beacon-sdk v2.2.1 for the Taquito Beacon wallet provider.
+* Ships with @sparkdreamnft/beacon-sdk v2.2.1 for the Taquito Beacon wallet provider.
 * As per the Taquito Versioning Strategy this v8.0.0 release supports the upcoming edonet Tezos Protocol which will activate on the Tezos mainnet on February 13th 2021.
 
 ## edonet Support

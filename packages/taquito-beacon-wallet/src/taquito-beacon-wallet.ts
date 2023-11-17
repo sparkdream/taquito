@@ -10,7 +10,7 @@ import {
   PermissionScope,
   getDAppClientInstance,
   SigningType,
-} from '@airgap/beacon-dapp';
+} from '@sparkdreamnft/beacon-dapp';
 import { BeaconWalletNotInitialized, MissingRequiredScopes } from './errors';
 import toBuffer from 'typedarray-to-buffer';
 import {

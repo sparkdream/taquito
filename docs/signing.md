@@ -70,7 +70,7 @@ The hexadecimal/Micheline representation of the string must contain 4 pieces of 
 Once you have your bytes, you can send them to the wallet to have them signed:
 
 ```typescript
-import { RequestSignPayloadInput, SigningType } from '@airgap/beacon-sdk';
+import { RequestSignPayloadInput, SigningType } from '@sparkdreamnft/beacon-sdk';
 
 const payload: RequestSignPayloadInput = {
   signingType: SigningType.MICHELINE,
@@ -91,7 +91,7 @@ Here is the full code to sign data with a wallet:
 
 ```ts
 import { char2Bytes } from '@taquito/utils';
-import { RequestSignPayloadInput, SigningType } from '@airgap/beacon-sdk';
+import { RequestSignPayloadInput, SigningType } from '@sparkdreamnft/beacon-sdk';
 
 // The data to format
 const dappUrl = 'tezos-test-d.app';
