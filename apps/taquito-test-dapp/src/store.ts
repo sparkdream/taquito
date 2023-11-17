@@ -1,6 +1,6 @@
 import { writable } from "svelte/store";
-import type { TezosToolkit } from "@taquito/taquito";
-import type { BeaconWallet } from "@taquito/beacon-wallet";
+import type { TezosToolkit } from "@sparkdreamnft/taquito";
+import type { BeaconWallet } from "@sparkdreamnft/taquito-beacon-wallet";
 import { defaultMatrixNode, defaultNetworkType, type SupportedNetworks } from "./config";
 import type { TestSettings } from "./types";
 

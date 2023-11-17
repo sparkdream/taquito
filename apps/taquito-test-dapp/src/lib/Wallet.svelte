@@ -1,10 +1,10 @@
 <script lang="ts">
   import { onMount, afterUpdate } from "svelte";
   import { fly } from "svelte/transition";
-  import { TezosToolkit } from "@taquito/taquito";
-  import { BeaconWallet } from "@taquito/beacon-wallet";
-  // import { BeaconEvent, defaultEventCallbacks } from "@airgap/beacon-sdk";
-  import { BeaconEvent, type DAppClientOptions } from "@airgap/beacon-sdk";
+  import { TezosToolkit } from "@sparkdreamnft/taquito";
+  import { BeaconWallet } from "@sparkdreamnft/taquito-beacon-wallet";
+  // import { BeaconEvent, defaultEventCallbacks } from "@sparkdreamnft/beacon-sdk";
+  import { BeaconEvent, type DAppClientOptions } from "@sparkdreamnft/beacon-sdk";
   import store from "../store";
   import { formatTokenAmount, shortenHash } from "../utils";
   import { defaultMatrixNode, getRpcUrl, defaultNetworkType, type SupportedNetworks } from "../config";

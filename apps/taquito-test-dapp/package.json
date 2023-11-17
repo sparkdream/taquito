@@ -24,17 +24,17 @@
     "vite": "^4.4.11"
   },
   "dependencies": {
-    "@airgap/beacon-sdk": "4.0.12",
-    "@taquito/beacon-wallet": "^17.4.0-beta-RC.0",
-    "@taquito/core": "^17.4.0-beta-RC.0",
-    "@taquito/taquito": "^17.4.0-beta-RC.0",
-    "@taquito/utils": "^17.4.0-beta-RC.0",
+    "@sparkdreamnft/beacon-sdk": "^4.0.16",
+    "@sparkdreamnft/taquito": "^17.4.5-beta-RC.0",
+    "@sparkdreamnft/taquito-beacon-wallet": "^17.4.5-beta-RC.0",
+    "@sparkdreamnft/taquito-core": "^17.4.5-beta-RC.0",
+    "@sparkdreamnft/taquito-utils": "^17.4.5-beta-RC.0",
     "buffer": "^6.0.3",
     "svelte-select": "^5.7.0",
     "vite-compatible-readable-stream": "^3.6.1"
   },
   "alias": {
-    "@airgap/beacon-sdk": "../../node_modules/@airgap/beacon-sdk/dist/esm/index.js"
+    "@sparkdreamnft/beacon-sdk": "../../node_modules/@sparkdreamnft/beacon-sdk/dist/esm/index.js"
   },
   "prettier": {
     "svelteSortOrder": "options-scripts-styles-markup"

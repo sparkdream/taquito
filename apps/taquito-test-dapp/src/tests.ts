@@ -4,11 +4,11 @@ import {
   Wallet,
   MichelsonMap,
   OpKind
-} from "@taquito/taquito";
-import type { ContractProvider } from "@taquito/taquito";
-import type { BeaconWallet } from "@taquito/beacon-wallet";
-import { char2Bytes, verifySignature } from "@taquito/utils";
-import { SigningType, type RequestSignPayloadInput } from "@airgap/beacon-sdk";
+} from "@sparkdreamnft/taquito";
+import type { ContractProvider } from "@sparkdreamnft/taquito";
+import type { BeaconWallet } from "@sparkdreamnft/taquito-beacon-wallet";
+import { char2Bytes, verifySignature } from "@sparkdreamnft/taquito-utils";
+import { SigningType, type RequestSignPayloadInput } from "@sparkdreamnft/beacon-sdk";
 import { get } from "svelte/store";
 import type { TestSettings, TestResult } from "./types";
 import store from "./store";

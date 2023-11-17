@@ -20,18 +20,18 @@ export default ({ command, mode }) => {
     },
     resolve: {
       alias: {
-        // dedupe @airgap/beacon-sdk
+        // dedupe @sparkdreamnft/beacon-sdk
         // I almost have no idea why it needs `cjs` on dev and `esm` on build, but this is how it works 🤷‍♂️
-        "@airgap/beacon-dapp": path.resolve(
+        "@sparkdreamnft/beacon-dapp": path.resolve(
           path.resolve(),
           // "./src/walletbeacon.dapp.min.js"
-          `../../node_modules/@airgap/beacon-dapp/dist/${isBuild ? "esm" : "cjs"
+          `../../node_modules/@sparkdreamnft/beacon-dapp/dist/${isBuild ? "esm" : "cjs"
           }/index.js`
-          // `../../node_modules/@airgap/beacon-dapp/dist/walletbeacon.dapp.min.js`
+          // `../../node_modules/@sparkdreamnft/beacon-dapp/dist/walletbeacon.dapp.min.js`
         ),
-        "@airgap/beacon-sdk": path.resolve(
+        "@sparkdreamnft/beacon-sdk": path.resolve(
           path.resolve(),
-          `../../node_modules/@airgap/beacon-sdk/dist/${isBuild ? "esm" : "cjs"
+          `../../node_modules/@sparkdreamnft/beacon-sdk/dist/${isBuild ? "esm" : "cjs"
           }/index.js`
         ),
         // polyfills
