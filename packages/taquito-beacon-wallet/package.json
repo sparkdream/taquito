@@ -71,7 +71,7 @@
     ]
   },
   "dependencies": {
-    "@sparkdreamnft/beacon-dapp": "^4.0.14",
+    "@sparkdreamnft/beacon-dapp": "^4.0.16",
     "@sparkdreamnft/taquito": "^17.4.3-beta-RC.0",
     "@sparkdreamnft/taquito-core": "^17.4.3-beta-RC.0"
   },
