@@ -1,6 +1,6 @@
 {
   "name": "@sparkdreamnft/taquito",
-  "version": "17.4.3-beta-RC.0",
+  "version": "17.4.4-beta-RC.0",
   "description": "High level functionality that builds upon the other packages in the Tezos Typescript Library Suite.",
   "keywords": [
     "tezos",
@@ -82,13 +82,13 @@
     ]
   },
   "dependencies": {
-    "@sparkdreamnft/taquito-core": "^17.4.3-beta-RC.0",
-    "@sparkdreamnft/taquito-http-utils": "^17.4.3-beta-RC.0",
-    "@sparkdreamnft/taquito-local-forging": "^17.4.3-beta-RC.0",
-    "@sparkdreamnft/taquito-michel-codec": "^17.4.3-beta-RC.0",
-    "@sparkdreamnft/taquito-michelson-encoder": "^17.4.3-beta-RC.0",
-    "@sparkdreamnft/taquito-rpc": "^17.4.3-beta-RC.0",
-    "@sparkdreamnft/taquito-utils": "^17.4.3-beta-RC.0",
+    "@sparkdreamnft/taquito-core": "^17.4.4-beta-RC.0",
+    "@sparkdreamnft/taquito-http-utils": "^17.4.4-beta-RC.0",
+    "@sparkdreamnft/taquito-local-forging": "^17.4.4-beta-RC.0",
+    "@sparkdreamnft/taquito-michel-codec": "^17.4.4-beta-RC.0",
+    "@sparkdreamnft/taquito-michelson-encoder": "^17.4.4-beta-RC.0",
+    "@sparkdreamnft/taquito-rpc": "^17.4.4-beta-RC.0",
+    "@sparkdreamnft/taquito-utils": "^17.4.4-beta-RC.0",
     "bignumber.js": "^9.1.2",
     "rxjs": "^7.8.1"
   },

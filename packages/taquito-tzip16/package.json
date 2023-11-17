@@ -1,6 +1,6 @@
 {
   "name": "@sparkdreamnft/taquito-tzip16",
-  "version": "17.4.3-beta-RC.0",
+  "version": "17.4.4-beta-RC.0",
   "description": "Tzip16",
   "keywords": [
     "tezos",
@@ -68,12 +68,12 @@
     ]
   },
   "dependencies": {
-    "@sparkdreamnft/taquito": "^17.4.3-beta-RC.0",
-    "@sparkdreamnft/taquito-core": "^17.4.3-beta-RC.0",
-    "@sparkdreamnft/taquito-http-utils": "^17.4.3-beta-RC.0",
-    "@sparkdreamnft/taquito-michelson-encoder": "^17.4.3-beta-RC.0",
-    "@sparkdreamnft/taquito-rpc": "^17.4.3-beta-RC.0",
-    "@sparkdreamnft/taquito-utils": "^17.4.3-beta-RC.0",
+    "@sparkdreamnft/taquito": "^17.4.4-beta-RC.0",
+    "@sparkdreamnft/taquito-core": "^17.4.4-beta-RC.0",
+    "@sparkdreamnft/taquito-http-utils": "^17.4.4-beta-RC.0",
+    "@sparkdreamnft/taquito-michelson-encoder": "^17.4.4-beta-RC.0",
+    "@sparkdreamnft/taquito-rpc": "^17.4.4-beta-RC.0",
+    "@sparkdreamnft/taquito-utils": "^17.4.4-beta-RC.0",
     "bignumber.js": "^9.1.2",
     "crypto-js": "^4.2.0"
   },
