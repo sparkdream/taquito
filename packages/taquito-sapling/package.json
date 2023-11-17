@@ -1,6 +1,6 @@
 {
   "name": "@sparkdreamnft/taquito-sapling",
-  "version": "17.4.4-beta-RC.0",
+  "version": "17.4.5-beta-RC.0",
   "description": "Allows reading and preparing sapling transactions",
   "keywords": [
     "tezos",
@@ -72,10 +72,10 @@
   },
   "dependencies": {
     "@airgap/sapling-wasm": "0.0.9",
-    "@sparkdreamnft/taquito": "^17.4.4-beta-RC.0",
-    "@sparkdreamnft/taquito-core": "^17.4.4-beta-RC.0",
-    "@sparkdreamnft/taquito-rpc": "^17.4.4-beta-RC.0",
-    "@sparkdreamnft/taquito-utils": "^17.4.4-beta-RC.0",
+    "@sparkdreamnft/taquito": "^17.4.5-beta-RC.0",
+    "@sparkdreamnft/taquito-core": "^17.4.5-beta-RC.0",
+    "@sparkdreamnft/taquito-rpc": "^17.4.5-beta-RC.0",
+    "@sparkdreamnft/taquito-utils": "^17.4.5-beta-RC.0",
     "@stablelib/nacl": "^1.0.4",
     "@stablelib/random": "^1.0.2",
     "bignumber.js": "^9.1.2",

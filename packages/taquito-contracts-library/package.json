@@ -1,6 +1,6 @@
 {
   "name": "@sparkdreamnft/taquito-contracts-library",
-  "version": "17.4.4-beta-RC.0",
+  "version": "17.4.5-beta-RC.0",
   "description": "Can be used as an extension on the TezosToolkit to provide contracts data",
   "keywords": [
     "tezos"
@@ -72,10 +72,10 @@
     ]
   },
   "dependencies": {
-    "@sparkdreamnft/taquito": "^17.4.4-beta-RC.0",
-    "@sparkdreamnft/taquito-core": "^17.4.4-beta-RC.0",
-    "@sparkdreamnft/taquito-rpc": "^17.4.4-beta-RC.0",
-    "@sparkdreamnft/taquito-utils": "^17.4.4-beta-RC.0",
+    "@sparkdreamnft/taquito": "^17.4.5-beta-RC.0",
+    "@sparkdreamnft/taquito-core": "^17.4.5-beta-RC.0",
+    "@sparkdreamnft/taquito-rpc": "^17.4.5-beta-RC.0",
+    "@sparkdreamnft/taquito-utils": "^17.4.5-beta-RC.0",
     "bignumber.js": "^9.1.2"
   },
   "devDependencies": {
