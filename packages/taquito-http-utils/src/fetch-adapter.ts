@@ -3,10 +3,10 @@
 
 import { AxiosRequestConfig, AxiosResponse } from 'axios';
 
-const settle = require('axios/lib/core/settle');
-const buildURL = require('axios/lib/helpers/buildURL');
-const buildFullPath = require('axios/lib/core/buildFullPath');
-const { isUndefined, isStandardBrowserEnv, isFormData } = require('axios/lib/utils');
+const settle = require('axios/unsafe/core/settle');
+const buildURL = require('axios/unsafe/helpers/buildURL');
+const buildFullPath = require('axios/unsafe/core/buildFullPath');
+const { isUndefined, isStandardBrowserEnv, isFormData } = require('axios/unsafe/utils');
 
 /**
  * - Create a request object
