@@ -3,6 +3,8 @@
  * @module @taquito/http-utils
  */
 
+/// <reference path="./axios.d.ts" />
+
 import fetchAdapter from './fetch-adapter';
 import { STATUS_CODE } from './status_code';
 import axios from 'axios';
