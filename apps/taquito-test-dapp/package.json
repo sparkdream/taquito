@@ -1,7 +1,7 @@
 {
   "name": "taquito-test-dapp-vite",
   "private": true,
-  "version": "17.4.5-beta-RC.0",
+  "version": "17.4.6-beta-RC.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -25,10 +25,10 @@
   },
   "dependencies": {
     "@sparkdreamnft/beacon-sdk": "^4.0.16",
-    "@sparkdreamnft/taquito": "^17.4.5-beta-RC.0",
-    "@sparkdreamnft/taquito-beacon-wallet": "^17.4.5-beta-RC.0",
-    "@sparkdreamnft/taquito-core": "^17.4.5-beta-RC.0",
-    "@sparkdreamnft/taquito-utils": "^17.4.5-beta-RC.0",
+    "@sparkdreamnft/taquito": "^17.4.6-beta-RC.0",
+    "@sparkdreamnft/taquito-beacon-wallet": "^17.4.6-beta-RC.0",
+    "@sparkdreamnft/taquito-core": "^17.4.6-beta-RC.0",
+    "@sparkdreamnft/taquito-utils": "^17.4.6-beta-RC.0",
     "buffer": "^6.0.3",
     "svelte-select": "^5.7.0",
     "vite-compatible-readable-stream": "^3.6.1"

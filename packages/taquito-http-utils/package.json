@@ -1,6 +1,6 @@
 {
   "name": "@sparkdreamnft/taquito-http-utils",
-  "version": "17.4.5-beta-RC.0",
+  "version": "17.4.6-beta-RC.0",
   "description": "",
   "keywords": [
     "tezos"
@@ -68,7 +68,7 @@
     ]
   },
   "dependencies": {
-    "@sparkdreamnft/taquito-core": "^17.4.5-beta-RC.0",
+    "@sparkdreamnft/taquito-core": "^17.4.6-beta-RC.0",
     "axios": "^1.6.2"
   },
   "devDependencies": {

@@ -1,6 +1,6 @@
 {
   "name": "@sparkdreamnft/taquito-remote-signer",
-  "version": "17.4.5-beta-RC.0",
+  "version": "17.4.6-beta-RC.0",
   "description": "Remote signer provider",
   "keywords": [
     "tezos",
@@ -67,10 +67,10 @@
     ]
   },
   "dependencies": {
-    "@sparkdreamnft/taquito": "^17.4.5-beta-RC.0",
-    "@sparkdreamnft/taquito-core": "^17.4.5-beta-RC.0",
-    "@sparkdreamnft/taquito-http-utils": "^17.4.5-beta-RC.0",
-    "@sparkdreamnft/taquito-utils": "^17.4.5-beta-RC.0",
+    "@sparkdreamnft/taquito": "^17.4.6-beta-RC.0",
+    "@sparkdreamnft/taquito-core": "^17.4.6-beta-RC.0",
+    "@sparkdreamnft/taquito-http-utils": "^17.4.6-beta-RC.0",
+    "@sparkdreamnft/taquito-utils": "^17.4.6-beta-RC.0",
     "@stablelib/blake2b": "^1.0.1",
     "@stablelib/ed25519": "^1.0.3",
     "typedarray-to-buffer": "^4.0.0"
