@@ -1,6 +1,6 @@
 {
   "name": "@sparkdreamnft/taquito-local-forging",
-  "version": "17.4.7-beta-RC.0",
+  "version": "17.4.7-beta-SD.0",
   "description": "Provide local forging functionality to be with taquito",
   "keywords": [
     "tezos",
@@ -72,14 +72,14 @@
     ]
   },
   "dependencies": {
-    "@sparkdreamnft/taquito-core": "^17.4.7-beta-RC.0",
-    "@sparkdreamnft/taquito-utils": "^17.4.7-beta-RC.0",
+    "@sparkdreamnft/taquito-core": "^17.4.7-beta-SD.0",
+    "@sparkdreamnft/taquito-utils": "^17.4.7-beta-SD.0",
     "bignumber.js": "^9.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.23.3",
     "@babel/preset-env": "^7.23.3",
-    "@sparkdreamnft/taquito-rpc": "^17.4.7-beta-RC.0",
+    "@sparkdreamnft/taquito-rpc": "^17.4.7-beta-SD.0",
     "@types/bluebird": "^3.5.40",
     "@types/estree": "^1.0.2",
     "@types/jest": "^29.5.5",
