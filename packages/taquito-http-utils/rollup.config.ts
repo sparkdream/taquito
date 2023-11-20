@@ -1,7 +1,6 @@
 import camelCase from 'lodash.camelcase';
 import typescript from 'rollup-plugin-typescript2';
 import json from 'rollup-plugin-json';
-import { dts } from 'rollup-plugin-dts';
 
 const pkg = require('./package.json');
 
@@ -25,13 +24,5 @@ export default [
       // Compile TypeScript files
       typescript({ tsconfig: './tsconfig.prod.json', useTsconfigDeclarationDir: true }),
     ],
-  },
-  {
-    input: 'src/axios.d.ts',
-    output: {
-      file: `dist/types/${libraryName}/src/axios.d.ts`,
-      format: 'es',
-    },
-    plugins: [dts()],
-  },
+  }
 ];
